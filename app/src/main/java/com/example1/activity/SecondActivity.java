@@ -12,7 +12,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Arrays;
+
 import static com.example1.activity.HuaweiIOT.*;
+
 import android.os.AsyncTask;
 
 
@@ -80,20 +82,20 @@ public class SecondActivity extends AppCompatActivity {
         }
         return return_properties;
     }
-    //声明控件
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        // 初始化控件
+
         tvTemperature = findViewById(R.id.tvTemperature);
         tvAir = findViewById(R.id.tvAir);
         tvSoil = findViewById(R.id.tvSoil);
         tvLight = findViewById(R.id.tvLight);
 
-        // 执行网络请求获取属性值
+
         new FetchPropertiesTask().execute();
     }
 
@@ -107,7 +109,7 @@ public class SecondActivity extends AppCompatActivity {
         protected void onPostExecute(int[] properties) {
             super.onPostExecute(properties);
 
-            // 更新UI
+
             int temp = properties[0];
             int soilHumidity = properties[1];
             int airHumidity = properties[2];
@@ -117,8 +119,6 @@ public class SecondActivity extends AppCompatActivity {
             tvAir.setText(getString(R.string.air_default) + " " + airHumidity + " %");
             tvSoil.setText(getString(R.string.soil_default) + " " + soilHumidity + " %");
             tvLight.setText(getString(R.string.light_default) + " " + light + " lx");
-
-
         }
     }
 }
