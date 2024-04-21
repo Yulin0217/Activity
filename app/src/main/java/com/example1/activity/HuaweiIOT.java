@@ -11,12 +11,13 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.Set;
 
 
 public class HuaweiIOT {
-
+    public static int[] return_properties = new int[4];
     @Nullable
     public static String gettoken() throws Exception {
         String strurl = "";
@@ -144,7 +145,7 @@ public class HuaweiIOT {
         return result;
     }*/
 
-    public static void main(String[] args) throws Exception {
+    public static int[] returnProperties(){
         String jsonStr;
         jsonStr = getProperties();
 
@@ -161,12 +162,12 @@ public class HuaweiIOT {
             int airHumidity = properties.getAsJsonPrimitive("air_humidity").getAsInt();
             int light = properties.getAsJsonPrimitive("light").getAsInt();
 
-            System.out.print("Temperature: " + temp);
-            System.out.print(" Soil Humidity: " + soilHumidity);
-            System.out.print(" Air Humidity: " + airHumidity);
-            System.out.print(" Light: " + light);
+            return_properties = new int[]{temp, soilHumidity, airHumidity, light};
+
+
         } else {
             System.out.println("No shadow data available.");
         }
+        return return_properties;
     }
 }

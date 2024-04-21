@@ -4,4 +4,10 @@
     <string name="air_humi">空气湿度：</string>
     <string name="soil_humi">土壤湿度：</string>
     <string name="light">光照强度：</string>
+    <string name="temperature_default">温度：</string>
+    <string name="soil_default">土壤湿度：</string>
+    <string name="air_default">空气湿度：</string>
+    <string name="light_default">光照强度：</string>
+
+
 </resources>
