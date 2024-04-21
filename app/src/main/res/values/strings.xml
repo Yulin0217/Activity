@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Activity</string>
+    <string name="temp">温度：</string>
+    <string name="air_humi">空气湿度：</string>
+    <string name="soil_humi">土壤湿度：</string>
+    <string name="light">光照强度：</string>
+</resources>

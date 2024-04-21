@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp"
+    android:background="@mipmap/register_background">
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="199sp"
+        android:layout_height="88sp"
+        android:background="@color/teal_700"
+        android:text="温度：23℃"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvSoil"
+        android:layout_width="199sp"
+        android:layout_height="88sp"
+        android:background="@color/teal_700"
+        android:text="土壤湿度：42%"
+        android:textSize="23sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvAir"
+        android:layout_width="199sp"
+        android:layout_height="88sp"
+        android:background="@color/teal_700"
+        android:text="空气湿度：36%"
+        android:textSize="23sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvLight"
+        android:layout_width="199sp"
+        android:layout_height="88sp"
+        android:background="@color/teal_700"
+        android:text="光照强度：3000lx"
+        android:textSize="23sp"
+        android:layout_marginTop="5dp"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gainsboro"
+        android:text="灌溉"
+        android:layout_marginTop="5dp"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gainsboro"
+        android:text="开灯"
+        android:layout_marginTop="5dp"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gainsboro"
+        android:text="卷帘"
+        android:layout_marginTop="5dp"/>
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gainsboro"
+        android:text="排风"
+        android:layout_marginTop="5dp"/>
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gainsboro"
+        android:text="加温"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="点击查看历史记录" />
+
+</LinearLayout>
+
+
