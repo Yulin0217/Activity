@@ -75,8 +75,4 @@ dependencies {
 
 }
 
-tasks.register("testSourceSet") {
-    doLast {
-        println(android.sourceSets.getByName("main").java.srcDirs)
-    }
-}
+

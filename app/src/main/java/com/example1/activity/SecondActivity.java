@@ -1,20 +1,14 @@
 package com.example1.activity;
-
-
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Arrays;
-
 import static com.example1.activity.HuaweiIOT.*;
-
 import android.os.AsyncTask;
 
 
